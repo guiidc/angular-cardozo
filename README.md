@@ -1,7 +1,7 @@
 # Desafio Angular em 48H :rocket:
 
 ## Sobre o projeto :package:
-Este projeto é uma entrevista técnica para, onde há a intenção de testar os conhecimentos através da rápida adaptação entre as tecnologias utilizadas, o projeto trata-se de um CRUD básico.
+Este projeto é um desafio técnico para, onde há a intenção de testar os conhecimentos através da rápida adaptação entre as tecnologias utilizadas, o projeto trata-se de um CRUD básico.
 
 O projeto está dividido em dois repositórios (BackEnd e FrontEnd).
 
@@ -25,6 +25,12 @@ O frontend é uma aplicação em Angular, onde são feitas as requisições para
 ### Front-End :computer:
 - Angular
 - BcryptJs
+
+<img src="https://github.com/guiidc/angular-cardozo/blob/master/previews/preview1.png" width="500px">
+<img src="https://github.com/guiidc/angular-cardozo/blob/master/previews/preview2.png" width="500px">
+<img src="https://github.com/guiidc/angular-cardozo/blob/master/previews/preview3.png" width="500px">
+<img src="https://github.com/guiidc/angular-cardozo/blob/master/previews/preview4.png" width="500px">
+<img src="https://github.com/guiidc/angular-cardozo/blob/master/previews/preview5.png" width="500px">
 
 
 ### Instruções Back-End :scroll:
