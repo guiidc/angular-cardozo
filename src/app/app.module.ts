@@ -33,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot([
+      {path: '', component: Schools},
       {path: 'login', component: Login},
       {path: 'edit-school/:id', component: EditSchool},
       {path: 'schools', component: Schools},
