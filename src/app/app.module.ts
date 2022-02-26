@@ -1,3 +1,5 @@
+import { EditGrade } from '../pages/editGrade/editGrade.component';
+import { AddGrade } from './../pages/addGrade/addGrade.component';
 import { Grades } from './../pages/grades/grades.component';
 import { AddSchool } from './../pages/addSchool/addSchool.component';
 import { EditSchool } from './../pages/editSchools/editSchool.component';
@@ -22,6 +24,8 @@ import { FormsModule } from '@angular/forms';
     EditSchool,
     AddSchool,
     Grades,
+    AddGrade,
+    EditGrade,
   ],
   imports: [
     HttpClientModule,
@@ -34,6 +38,8 @@ import { FormsModule } from '@angular/forms';
       {path: 'schools', component: Schools},
       {path: 'add-school', component: AddSchool},
       {path: 'grades', component: Grades},
+      {path: 'add-grade', component: AddGrade},
+      {path: 'edit-grade/:id', component: EditGrade},
     ])
   ],
   providers: [],

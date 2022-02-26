@@ -1,20 +1,31 @@
+import { baseUrl } from 'src/utils';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: 'grades',
   templateUrl: './grades.component.html',
 })
-export class Grades {
+export class Grades implements OnInit{
 
-  constructor(private router: Router){}
+  gradesList: any
+  constructor(private router: Router, private http: HttpClient){}
 
-  onEditSchool(index: number) {
-    this.router.navigate([`/edit-school/1`])
+  ngOnInit() {
+    if(!localStorage.getItem('token')) {
+      this.router.navigate(['/login'])
+    }
+
+    this.http.get(baseUrl + '/grades', {headers: {authorization: localStorage.getItem('token') as string}})
+    .subscribe((response) => this.gradesList = response)
   }
 
-  onAddSchool() {
-    this.router.navigate(['/add-school'])
+  onEditGrade(id: number) {
+    this.router.navigate([`/edit-grade/${id}`])
+  }
 
+  onAddGrade() {
+    this.router.navigate(['/add-grade'])
   }
 }
