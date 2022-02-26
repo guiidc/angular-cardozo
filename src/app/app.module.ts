@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RouterModule.forRoot([
       {path: 'login', component: Login},
       {path: 'edit-school/:id', component: EditSchool},

@@ -14,12 +14,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>40 Turmas</td>
+      <tr *ngFor="let school of schoolsList">
+        <th scope="row">{{school.id}}</th>
+        <td>{{school.name}}</td>
+        <td>{{school.grades.length + ' Turmas'}}</td>
         <td class="d-flex justify-content-center gap-3">
-          <button class="btn btn-success bt-sm" (click)="onEditSchool(1)">Editar Escola</button>
+          <button class="btn btn-success bt-sm" (click)="onEditSchool(school.id)">Editar Escola</button>
         </td>
       </tr>
     </tbody>

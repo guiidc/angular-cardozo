@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from "@angular/core";
 
 @Component({
@@ -5,5 +6,12 @@ import { Component } from "@angular/core";
   templateUrl: './navbar.component.html',
 })
 export class Navbar {
+
+  constructor(private router: Router) {}
+
+  onLogout() {
+    localStorage.removeItem('token');
+    this.router.navigate(['/login']);
+  }
 
 }

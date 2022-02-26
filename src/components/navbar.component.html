@@ -12,14 +12,8 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/grades">Turmas</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Perfil
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Editar</a></li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
-          </ul>
+        <li class="nav-item">
+          <span class="nav-link pointer" role="button" (click)="onLogout()">Logout</span>
         </li>
       </ul>
     </div>
